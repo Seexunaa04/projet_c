@@ -2,7 +2,7 @@
 #include<stdio.h>
 int main(){
     int x,n,somme=0,cpt=0;
-    float moy;
+    float moy,moy1;
     do{
     printf("saisir n entiers:");
     scanf("%d",&n);
@@ -15,6 +15,8 @@ int main(){
         if(x%2==0){
             somme=somme+x;
             cpt++;
+            printf("la moyenne des nombre pair est%d:",moy);
+            printf("la moyenne des nombre impair est%d:",moy1);
         }
     }
     moy=somme/cpt;
